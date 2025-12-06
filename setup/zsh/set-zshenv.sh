@@ -12,6 +12,6 @@ if [ ! -e "$HOME/.zshenv" ]; then
 fi
 
 mkdir -p $HOME/.config
-if [ ! -e "$HOME/.conifg/zsh"]; then
+if [ ! -e "$HOME/.conifg/zsh" ]; then
     ln -s "$DOTFILES_DIR/.config/zsh" "$HOME/.config/zsh"
 fi
