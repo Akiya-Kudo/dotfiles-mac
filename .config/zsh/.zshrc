@@ -27,8 +27,8 @@ function yy() {
 
 # secrets loading
 if [ -f "$HOME/.zsh_secrets" ]; then
-	source "$HOME/.zsh_secrets"
+	source "$HOME/.secrets.zsh"
 fi
 
 # alias loading
-source "$HOME/.config/zsh/alias.zsh"
+source "$HOME/.config/zsh/.alias.zsh"
