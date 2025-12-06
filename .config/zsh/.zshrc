@@ -37,6 +37,7 @@ function yy() {
 # brew setup
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # starship setup
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
 ###########################################
