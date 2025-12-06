@@ -1,0 +1,106 @@
+# brew setup
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# starship setup
+eval "$(starship init zsh)"
+
+# 12aws
+export PATH="/Users/kudoakiya/dev/lab/infras/12aws:$PATH"
+
+#volta setup
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# zsh plugins
+source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# python pip3 and online-judge-tools  setup
+export PATH="/opt/homebrew/opt/python@3.9/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
+# yazi setup
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+
+# alias
+alias l='eza -la --icons'
+alias p='cd ~/projects'
+alias d='cd ~/dotfiles'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias g='git'
+alias gst='git status'
+alias gs='git stash'
+alias ga='git add'
+alias gc='git commit -m'
+alias gac='git add --all && git commit -m'
+alias gps='git push'
+alias gpl='git pull'
+alias gd='git diff'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gb='git branch'
+alias gbv='git branch -v'
+alias gbvv='git branch -vv'
+alias glg='git log --graph --color=always'
+alias gl='git log --oneline -n'
+alias dp='docker ps'
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
+alias dcl='docker compose logs -f'
+alias dce='docker compose exec'
+alias dcb='docker compose build'
+alias nr='npm run'
+alias shutnow='shutdown -h now'
+alias relogin='exec zsh -l'
+alias ll='ls -l'
+alias lal='ls -al' 
+
+# biblio read:package only 
+export GITHUB_READ_PACKAGES_TOKEN=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
+export GITHUB_CONTAINER_REGISTORY_TOKEN=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
+
+
+# GITHUB (my-pc-classic-token PAT)
+export GITHUB_TOKEN=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_hoge
+
+export GITHUB_TOKEN_DOCKER=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_hoge
+
+# For MCP etc
+export FIGMA_TOKEN=figd_qeuMGiTpiMbzih-4jS32OkEa7rU9uAVH595ZpcPe_hoge
+
+# Android Studio
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Spring Boot with VSCode
+export JAVA_HOME=`/usr/libexec/java_home -v 17`
+
+# expo redirect test
+EXPO_TUNNEL_SUBDOMAIN=com.anonymous.redirect_test_expo
+
+
+# export GOPATH=$HOME/dev/training/go
+# export PATH=$PATH:$GOPATH/bin
+
+# Local binを実行できるように
+PATH=$PATH:/Users/kudoakiya/.local/bin
+
+# Intelli J IDEAをCLIから起動できるようにする設定
+PATH=$PATH:/Applications/IntelliJ \IDEA \CE.app/Contents/MacOS
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/kudoakiya/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
