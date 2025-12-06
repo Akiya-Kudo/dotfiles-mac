@@ -39,6 +39,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # starship setup
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+# zsh-autosuggestions setup
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#75a0b3'
 
 ###########################################
 #       APPLICATION PATH SETTINGS          
