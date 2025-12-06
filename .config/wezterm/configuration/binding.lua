@@ -36,8 +36,17 @@ function module.apply_to_config(config)
                 key = "w",
                 mods = "CTRL",
             },
-        }
+        },
+        -- close pane
+        {
+            key = "w",
+            mods = "CMD|SHIFT",
+            action = wezterm.action.CloseCurrentPane { confirm = false },
+        },
     }
+    -- pane close confirmation
+    -- 空のリストにすることで、すべてのプロセスで確認ダイアログが表示される
+    config.skip_close_confirmation_for_processes_named = {}
 end
 
 -- return our module table

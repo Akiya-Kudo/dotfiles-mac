@@ -3,19 +3,32 @@ local module = {}
 function module.apply_to_config(config)
     config.color_scheme = 'Black Metal (Mayhem) (base16)'
 
-    -- text style
+    -- colors
     config.colors = {
+        -- prompt
         background = '#000000',
         foreground = '#ffffff',
-        split = '#f28705',
+        split = '#cd9b5b',
         cursor_border = '#f28705',
         cursor_fg = '#ffffff',
         cursor_bg = '#f28705',
         selection_fg = '#ffffff',
         selection_bg = '#26416e',
+        -- tab bar
+        tab_bar = {
+            background = 'rgba(255, 255, 255, 0)',
+            active_tab = {
+                bg_color = '#f28705',
+                fg_color = '#ffffff',
+            },
+            inactive_tab = {
+                bg_color = '#3c5768',
+                fg_color = '#aaaaaa',
+            },
+        },
     }
     
-    -- MEMO: cursor style
+    -- cursor
     config.default_cursor_style = 'SteadyBar'
     -- config.default_cursor_style = 'BlinkingBar'
     -- config.visual_bell = {
@@ -28,6 +41,17 @@ function module.apply_to_config(config)
     -- opacity
     config.window_background_opacity = 0.4
     config.macos_window_background_blur = 12
+
+    -- window decorations
+    config.window_decorations = "RESIZE"
+
+    -- padding
+    config.window_padding = {
+        left = 24,
+        right = 24,
+        top = 24,
+        bottom = 24,
+    }
 end
 
 -- return our module table
