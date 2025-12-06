@@ -17,7 +17,7 @@ source "$HOME/.config/zsh/.alias.zsh"
 # local bin
 export PATH=$PATH:$HOME/.local/bin
 
-# dotfiles bin
+########    DOTFIILES COMMAND   ##########
 export PATH=$PATH:$HOME/.local/bin/command
 
 ###########################################
@@ -56,6 +56,6 @@ export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 # expo redirect test
 EXPO_TUNNEL_SUBDOMAIN=com.anonymous.redirect_test_expo
 # intellij idea
-PATH=$PATH:/Applications/IntelliJ \IDEA \CE.app/Contents/MacOS
+# PATH=$PATH:/Applications/IntelliJ \IDEA \CE.app/Contents/MacOS
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
