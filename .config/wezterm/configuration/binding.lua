@@ -40,6 +40,11 @@ function module.apply_to_config(config)
                 mods = "CTRL",
             },
         },
+        -- pane direction
+        {key="LeftArrow", mods="CMD|SHIFT", action=wezterm.action.ActivatePaneDirection("Left")},
+        {key="RightArrow", mods="CMD|SHIFT", action=wezterm.action.ActivatePaneDirection("Right")},
+        {key="UpArrow", mods="CMD|SHIFT", action=wezterm.action.ActivatePaneDirection("Up")},
+        {key="DownArrow", mods="CMD|SHIFT", action=wezterm.action.ActivatePaneDirection("Down")},
         -- close pane
         {
             key = "w",
@@ -47,9 +52,9 @@ function module.apply_to_config(config)
             action = wezterm.action.CloseCurrentPane { confirm = false },
         },
     }
-    -- pane close confirmation
+    -- tabやpaneの削除confirmationを表示したい場合は下記を有効にする
     -- 空のリストにすることで、すべてのプロセスで確認ダイアログが表示される
-    config.skip_close_confirmation_for_processes_named = {}
+    -- config.skip_close_confirmation_for_processes_named = {}
 end
 
 -- return our module table

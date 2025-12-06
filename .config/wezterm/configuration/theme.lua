@@ -54,6 +54,12 @@ function module.apply_to_config(config)
         top = 24,
         bottom = 24,
     }
+    
+    -- inactive pane color
+    config.inactive_pane_hsb = {
+        saturation = 0.4,
+        brightness = 0.4,
+    }
 end
 
 -- タブタイトルを現在のディレクトリ名に設定
@@ -65,6 +71,7 @@ wezterm.on('format-tab-title', function(tab)
     end
     return { { Text = ' ' .. name .. ' ' } }
 end)
+
 
 -- return our module table
 return module
