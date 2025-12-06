@@ -1,3 +1,5 @@
+local wezterm = require 'wezterm'
+
 local module = {}
 
 function module.apply_to_config(config)
@@ -53,6 +55,16 @@ function module.apply_to_config(config)
         bottom = 24,
     }
 end
+
+-- タブタイトルを現在のディレクトリ名に設定
+wezterm.on('format-tab-title', function(tab)
+    local cwd = tab.active_pane.current_working_dir.file_path or ''
+    local name = string.match(cwd, '[^/]+$') or 'WEZTERM'
+    if #name > 20 then
+        name = string.sub(name, 1, 20) .. '...'
+    end
+    return { { Text = ' ' .. name .. ' ' } }
+end)
 
 -- return our module table
 return module

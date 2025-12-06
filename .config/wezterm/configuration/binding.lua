@@ -13,6 +13,7 @@ function module.apply_to_config(config)
             mods = 'CMD|SHIFT',
             action = wezterm.action.SplitVertical({ domain = 'CurrentPaneDomain'}),
         },
+        -- 矢印キーでも単語移動できるように
         {
             key = "RightArrow",
             mods = "ALT",
@@ -21,6 +22,7 @@ function module.apply_to_config(config)
                 mods = "META",
             },
         },
+        -- 矢印キーでも単語移動できるように
         {
             key = "LeftArrow",
             mods = "ALT",
@@ -29,6 +31,7 @@ function module.apply_to_config(config)
                 mods = "META",
             },
         },
+        -- backspaceで単語ごとの削除ができるように
         {
             key = "Backspace",
             mods = "ALT",
