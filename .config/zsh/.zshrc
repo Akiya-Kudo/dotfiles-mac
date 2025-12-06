@@ -1,7 +1,6 @@
 ###########################################
 #                  PLUGINS                
 ###########################################
-source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 ###########################################

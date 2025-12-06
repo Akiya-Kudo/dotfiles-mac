@@ -1,18 +1,24 @@
-# alias
-alias l='eza -la --icons'
-alias p='cd ~/projects'
-alias d='cd ~/dotfiles'
+
+###########################################
+#                  BASH          
+###########################################
+alias l='eza'
+alias ll='eza -l'
+alias lal='eza -al'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias rm='rm -iv'
 alias cp='cp -iv'
+###########################################
+#                   GIT        
+###########################################
 alias g='git'
-alias gst='git status'
-alias gs='git stash'
 alias ga='git add'
 alias gc='git commit -m'
 alias gac='git add --all && git commit -m'
+alias gs='git stash'
+alias gst='git status'
 alias gps='git push'
 alias gpl='git pull'
 alias gd='git diff'
@@ -21,15 +27,22 @@ alias gcob='git checkout -b'
 alias gb='git branch -vv'
 alias glg='git log --graph --color=always'
 alias gl='git log --oneline -n'
+###########################################
+#                 DOCKER         
+###########################################
+alias d='docker'
 alias dp='docker ps'
+alias dima='docker images'
+alias dcon='docker container'
+alias dvol='docker volume'
+alias dnet='docker network'
+alias dlog='docker logs'
+alias dexe='docker exec'
+alias dexeit='docker exec -it'
 alias dc='docker compose'
-alias dcu='docker compose up'
-alias dcd='docker compose down'
-alias dcl='docker compose logs -f'
-alias dce='docker compose exec'
-alias dcb='docker compose build'
+alias dcexe='docker compose exec'
+alias dcexeit='docker compose exec -it'
+###########################################
+#                 NPM         
+###########################################
 alias nr='npm run'
-alias shutnow='shutdown -h now'
-alias relogin='exec zsh -l'
-alias ll='ls -l'
-alias lal='ls -al'
