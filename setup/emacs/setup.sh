@@ -8,7 +8,7 @@ DOTFILES_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 # set ~/.emacs.d/init.el
 mkdir -p $HOME/.emacs.d
-if [ -e "$HOME/.emacs.d/init.el" ]; then
+if [ ! -e "$HOME/.emacs.d/init.el" ]; then
     ln -s "$SCRIPT_DIR/init.el" "$HOME/.emacs.d/init.el"
 fi
 
