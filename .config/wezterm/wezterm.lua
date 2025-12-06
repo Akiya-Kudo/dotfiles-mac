@@ -9,10 +9,12 @@ end
 -----------------------------------
 -- Load modules
 -----------------------------------
-local color = require 'lua.color'
-local font = require 'lua.font'
+local theme = require 'configuration.theme'
+local font = require 'configuration.font'
+local binding = require 'configuration.binding'
 
-color.apply_to_config(config)
+theme.apply_to_config(config)
 font.apply_to_config(config)
+binding.apply_to_config(config)
 
 return config
