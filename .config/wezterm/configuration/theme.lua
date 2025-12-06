@@ -24,8 +24,8 @@ function module.apply_to_config(config)
                 fg_color = '#ffffff',
             },
             inactive_tab = {
-                bg_color = '#3c5768',
-                fg_color = '#aaaaaa',
+                bg_color = '#907b51',
+                fg_color = '#ffffff',
             },
         },
     }
