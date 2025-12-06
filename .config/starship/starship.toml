@@ -2,6 +2,7 @@
 
 [aws]
 symbol = " "
+style = "bold #ffac90"
 
 [buf]
 symbol = " "
@@ -32,9 +33,11 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
+style = "bold #ff9900"
 
 [docker_context]
 symbol = " "
+style = "bold #0db7ed"
 
 [elixir]
 symbol = " "
@@ -53,12 +56,14 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+style = "bold #f2b305"
 
 [git_commit]
 tag_symbol = '  '
 
 [golang]
 symbol = " "
+style = "bold #00add8"
 
 [gradle]
 symbol = " "
@@ -77,9 +82,11 @@ symbol = " "
 
 [hostname]
 ssh_symbol = " "
+style = "bold #907b51"
 
 [java]
 symbol = " "
+style = "bold #ed8b00"
 
 [julia]
 symbol = " "
@@ -104,6 +111,7 @@ symbol = " "
 
 [nodejs]
 symbol = " "
+style = "bold #68a063"
 
 [ocaml]
 symbol = " "
@@ -172,24 +180,30 @@ symbol = "󰏗 "
 
 [python]
 symbol = " "
+style = "bold #4b8bbe"
 
 [rlang]
 symbol = "󰟔 "
 
 [ruby]
 symbol = " "
+style = "bold #cc342d"
 
 [rust]
 symbol = "󱘗 "
+style = "bold #ce422b"
 
 [scala]
 symbol = " "
 
 [status]
 symbol = " "
+style = "bold red"
 
 [swift]
 symbol = " "
+style = "bold #fa7343"
 
 [zig]
 symbol = " "
+style = "bold #f7a41d"
