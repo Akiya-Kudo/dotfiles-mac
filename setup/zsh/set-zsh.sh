@@ -22,3 +22,8 @@ if [ ! -e "$HOME/.conifg/zsh" ]; then
     ln -s "$DOTFILES_DIR/.config/zsh" "$HOME/.config/zsh"
 fi
 
+# set command in ~/.local/bin/dotfiles
+mkdir -p $HOME/.local/bin/dotfiles
+if [ ! -e "$HOME/.local/bin/dotfiles" ]; then
+    ln -s "$DOTFILES_DIR/command" "$HOME/.local/bin/dotfiles"
+fi
