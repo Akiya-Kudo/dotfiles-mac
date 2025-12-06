@@ -18,12 +18,12 @@ fi
 
 # set .config/zsh configuration
 mkdir -p $HOME/.config
-if [ ! -e "$HOME/.conifg/zsh" ]; then
-    ln -s "$DOTFILES_DIR/.config/zsh" "$HOME/.config/zsh"
+if [ ! -e "$HOME/.config/zsh" ]; then
+    ln -s "$DOTFILES_DIR/.config/zsh" "$HOME/.config"
 fi
 
 # set command in ~/.local/bin/dotfiles
-mkdir -p $HOME/.local/bin/dotfiles
-if [ ! -e "$HOME/.local/bin/dotfiles" ]; then
-    ln -s "$DOTFILES_DIR/command" "$HOME/.local/bin/dotfiles"
+if [ ! -e "$HOME/.local/bin" ]; then
+    mkdir -p $HOME/.local/bin
+    ln -s "$DOTFILES_DIR/command" "$HOME/.local/bin"
 fi

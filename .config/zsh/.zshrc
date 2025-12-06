@@ -17,6 +17,9 @@ source "$HOME/.config/zsh/.alias.zsh"
 # local bin
 export PATH=$PATH:$HOME/.local/bin
 
+# dotfiles bin
+export PATH=$PATH:$HOME/.local/bin/command
+
 ###########################################
 #         APPLICATION CONFIGURATION          
 ###########################################
