@@ -23,7 +23,8 @@ if [ ! -e "$HOME/.config/zsh" ]; then
 fi
 
 # set command in ~/.local/bin/dotfiles
-if [ ! -e "$HOME/.local/bin" ]; then
-    mkdir -p $HOME/.local/bin
+mkdir -p $HOME/.local/bin
+if [ -e "$HOME/.local/bin" ]; then
+
     ln -s "$DOTFILES_DIR/command" "$HOME/.local/bin"
 fi

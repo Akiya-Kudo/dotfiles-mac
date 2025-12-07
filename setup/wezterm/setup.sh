@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 set -e
@@ -7,7 +6,8 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DOTFILES_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
+# set .config/wezterm configuration
 mkdir -p $HOME/.config
-if [ ! -e "$HOME/.config/starship" ]; then
-    ln -s "$DOTFILES_DIR/.config/starship" "$HOME/.config"
+if [ ! -e "$HOME/.config/wezterm" ]; then
+    ln -s "$DOTFILES_DIR/.config/wezterm" "$HOME/.config"
 fi
