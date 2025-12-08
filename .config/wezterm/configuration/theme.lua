@@ -41,7 +41,7 @@ function module.apply_to_config(config)
     -- }
 
     -- opacity
-    config.window_background_opacity = 0.4
+    config.window_background_opacity = 0.6
     config.macos_window_background_blur = 12
 
     -- window decorations
