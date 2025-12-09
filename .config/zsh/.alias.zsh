@@ -53,7 +53,7 @@ alias nr='npm run'
 #            UV( PYTHON )         
 ###########################################
 alias ur='uv run'
-aliss urp='uv run --package'
+alias urp='uv run --package'
 ###########################################
 #                 EMACS
 ###########################################
