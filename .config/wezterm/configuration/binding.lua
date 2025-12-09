@@ -40,6 +40,15 @@ function module.apply_to_config(config)
                 mods = "CTRL",
             },
         },
+	-- delete all
+	{
+        key = "Backspace",
+        mods = "CMD",
+        action = wezterm.action.SendKey {
+            key = "Backspace",
+            mods = "CTRL",
+        },
+	},
         -- pane direction
         {key="LeftArrow", mods="CMD|SHIFT", action=wezterm.action.ActivatePaneDirection("Left")},
         {key="RightArrow", mods="CMD|SHIFT", action=wezterm.action.ActivatePaneDirection("Right")},
