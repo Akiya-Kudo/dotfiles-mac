@@ -46,9 +46,14 @@ alias dc='docker compose'
 alias dcexe='docker compose exec'
 alias dcexeit='docker compose exec -it'
 ###########################################
-#                 NPM         
+#           NPM ( NODE.JS )        
 ###########################################
 alias nr='npm run'
+###########################################
+#            UV( PYTHON )         
+###########################################
+alias ur='uv run'
+aliss urp='uv run --package'
 ###########################################
 #                 EMACS
 ###########################################
