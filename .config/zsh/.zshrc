@@ -24,7 +24,7 @@ export PATH=$PATH:$HOME/.local/bin/command
 #         APPLICATION CONFIGURATION          
 ###########################################
 # 12aws
-export PATH="/Users/kudoakiya/dev/lab/infras/12aws:$PATH"
+export PATH="/usr/local/bin/:/Users/kudoakiya/dev/lab/infras/12aws:$PATH"
 # yazi
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"

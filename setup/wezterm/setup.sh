@@ -11,3 +11,9 @@ mkdir -p $HOME/.config
 if [ ! -e "$HOME/.config/wezterm" ]; then
     ln -s "$DOTFILES_DIR/.config/wezterm" "$HOME/.config"
 fi
+
+# set fonts
+mkdir -p $HOME/.config
+if [ ! -e "$HOME/.config/font" ]; then
+    ln -s "$DOTFILES_DIR/asset/font" "$HOME/.config"
+fi
